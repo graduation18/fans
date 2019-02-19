@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="15dp"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableLayout2"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_settings"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/red" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grey_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lang"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/rad_grp_lang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/radBtn_eng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:buttonTint="@color/red"
+                    android:text="English"
+                    android:textSize="@dimen/subheading" />
+
+                <RadioButton
+                    android:id="@+id/radBtn_ar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/red"
+                    android:text="عربي"
+                    android:textSize="@dimen/subheading" />
+
+            </RadioGroup>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_filter1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/red" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grey_bg" />
+
+                <TextView
+                    android:id="@+id/filter1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/filter_by"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv_filter1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/rel_filter2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/red" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grey_bg" />
+
+                <TextView
+                    android:id="@+id/filter2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/filter_by"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv_filter2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/rel_filter3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/red" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grey_bg" />
+
+                <TextView
+                    android:id="@+id/filter3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/filter_by"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_stopNotif"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                android:padding="8dp">
+
+                <CheckedTextView
+                    android:id="@+id/stop_mob_noti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:drawableTint="@color/green"
+                    android:gravity="center_vertical"
+                    android:text="@string/stop_mobile_notifications" />
+            </RelativeLayout>
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_switch"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:text="Switch WS"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:padding="15dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:background="@color/white"/>-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:background="@drawable/red_green"-->
+    <!--android:text="Save"-->
+    <!--android:textColor="@color/white" />-->
+
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/red_green">
+
+            <TextView
+                android:id="@+id/btn_cancel_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/cancel"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/btn_save_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
+
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical"--><!--tools:context=".MainActivity">-->
+
+    <!--<ScrollView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_above="@+id/tableLayout4"--><!--android:layout_alignParentTop="true">-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rel_02"--><!--android:layout_width="match_parent"--><!--android:layout_height="40dp"--><!--android:layout_alignParentTop="true"--><!--android:layout_marginLeft="15dp"--><!--android:layout_marginRight="15dp"--><!--android:layout_marginTop="15dp"--><!--android:background="@color/white">-->
+
+    <!--<View--><!--android:layout_width="2dp"--><!--android:layout_height="match_parent"--><!--android:background="@color/red" />-->
+
+    <!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="2dp"--><!--android:layout_alignParentBottom="true"--><!--android:layout_marginLeft="10dp"--><!--android:layout_marginRight="10dp"--><!--android:background="@color/grey_bg" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerVertical="true"--><!--android:layout_marginLeft="10dp"--><!--android:text="@string/fb_set"--><!--android:textColor="@color/red" />--><!--</RelativeLayout>-->
+
+    <!--<LinearLayout--><!--android:id="@+id/lin_01"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/rel_02"--><!--android:layout_marginLeft="15dp"--><!--android:layout_marginRight="15dp"--><!--android:background="@color/white"--><!--android:orientation="vertical"--><!--android:paddingBottom="10dp"--><!--android:paddingLeft="5dp"--><!--android:paddingRight="5dp">-->
+
+    <!--<CheckedTextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:checkMark="@null"--><!--android:checkMarkTint="@color/green"--><!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"--><!--android:drawableRight="@null"--><!--android:gravity="center_vertical"--><!--android:paddingTop="10dp"--><!--android:text="New CheckedTextView" />-->
+
+    <!--<CheckedTextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:checkMark="@null"--><!--android:checkMarkTint="@color/green"--><!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"--><!--android:drawableRight="@null"--><!--android:gravity="center_vertical"--><!--android:paddingTop="10dp"--><!--android:text="New CheckedTextView" />-->
+
+    <!--<CheckedTextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:checkMark="@null"--><!--android:checkMarkTint="@color/green"--><!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"--><!--android:drawableRight="@null"--><!--android:gravity="center_vertical"--><!--android:paddingTop="10dp"--><!--android:text="New CheckedTextView" />-->
+
+    <!--<CheckedTextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:checkMark="@null"--><!--android:checkMarkTint="@color/green"--><!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"--><!--android:drawableRight="@null"--><!--android:gravity="center_vertical"--><!--android:paddingTop="10dp"--><!--android:text="New CheckedTextView" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rel_03"--><!--android:layout_width="match_parent"--><!--android:layout_height="40dp"--><!--android:layout_below="@+id/lin_01"--><!--android:layout_marginLeft="15dp"--><!--android:layout_marginRight="15dp"--><!--android:layout_marginTop="15dp"--><!--android:background="@color/white">-->
+
+    <!--<View--><!--android:layout_width="2dp"--><!--android:layout_height="match_parent"--><!--android:background="@color/red" />-->
+
+    <!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="2dp"--><!--android:layout_alignParentBottom="true"--><!--android:layout_marginLeft="10dp"--><!--android:layout_marginRight="10dp"--><!--android:background="@color/grey_bg" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerVertical="true"--><!--android:layout_marginLeft="10dp"--><!--android:text="@string/mob_set"--><!--android:textColor="@color/red" />--><!--</RelativeLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/rel_03"--><!--android:layout_marginLeft="15dp"--><!--android:layout_marginRight="15dp"--><!--android:background="@color/white"--><!--android:orientation="vertical"--><!--android:paddingBottom="10dp"--><!--android:paddingLeft="5dp"--><!--android:paddingRight="5dp">-->
+
+    <!--<CheckedTextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:checkMark="@null"--><!--android:checkMarkTint="@color/green"--><!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"--><!--android:drawableRight="@null"--><!--android:gravity="center_vertical"--><!--android:paddingTop="10dp"--><!--android:text="New CheckedTextView" />-->
+
+    <!--<CheckedTextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:checkMark="@null"--><!--android:checkMarkTint="@color/green"--><!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"--><!--android:drawableRight="@null"--><!--android:gravity="center_vertical"--><!--android:paddingTop="10dp"--><!--android:text="New CheckedTextView" />-->
+
+    <!--<CheckedTextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:checkMark="@null"--><!--android:checkMarkTint="@color/green"--><!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"--><!--android:drawableRight="@null"--><!--android:gravity="center_vertical"--><!--android:paddingTop="10dp"--><!--android:text="New CheckedTextView" />-->
+
+    <!--<CheckedTextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:checkMark="@null"--><!--android:checkMarkTint="@color/green"--><!--android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"--><!--android:drawableRight="@null"--><!--android:gravity="center_vertical"--><!--android:paddingTop="10dp"--><!--android:text="New CheckedTextView" />-->
+
+    <!--</LinearLayout>--><!--</RelativeLayout>--><!--</ScrollView>-->
+
+    <!--<TableLayout--><!--android:id="@+id/tableLayout4"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentBottom="true"--><!--android:stretchColumns="*">-->
+
+    <!--<TableRow--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="@drawable/red_green">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center_horizontal"--><!--android:orientation="horizontal">-->
+
+    <!--<ImageView--><!--android:layout_width="20dp"--><!--android:layout_height="20dp"--><!--android:layout_gravity="center_vertical"--><!--android:src="@drawable/wrong_icon" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:padding="10dp"--><!--android:text="@string/cancel"--><!--android:textColor="@color/white" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:gravity="center_horizontal"--><!--android:orientation="horizontal">-->
+
+    <!--<ImageView--><!--android:layout_width="20dp"--><!--android:layout_height="20dp"--><!--android:layout_gravity="center_vertical"--><!--android:src="@drawable/right_icon" />-->
+
+    <!--<TextView--><!--android:id="@+id/btn_save_filter"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:padding="10dp"--><!--android:text="@string/save"--><!--android:textColor="@color/white" />--><!--</LinearLayout>-->
+
+    <!--</TableRow>--><!--</TableLayout>--><!--</RelativeLayout>-->

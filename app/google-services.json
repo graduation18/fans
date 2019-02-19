@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "206053753790",
+    "firebase_url": "https://fanscouponcom.firebaseio.com",
+    "project_id": "fanscouponcom",
+    "storage_bucket": "fanscouponcom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206053753790:android:5bd906e111cc8ccb",
+        "android_client_info": {
+          "package_name": "com.systemonline.fanscoupon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206053753790-avfbsvs72eaho4deg7o5ea90dntogo7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.systemonline.fanscoupon",
+            "certificate_hash": "4a9fca1382891b43e585655a124b1c58b4e896e6"
+          }
+        },
+        {
+          "client_id": "206053753790-vkur2oakgdlkpl9l7sn1bep85aqblhup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANgyVkGmPAZpf3BPGOBRzZgPGHHw_Ry5c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206053753790-vkur2oakgdlkpl9l7sn1bep85aqblhup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

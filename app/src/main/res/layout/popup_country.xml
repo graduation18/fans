@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/grey_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/FanzoIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:src="@drawable/badge_fan" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/FanzoIcon"
+                android:layout_toRightOf="@+id/FanzoIcon"
+                android:text="@string/choose_country"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relative_question1"
+            android:layout_margin="20dp"
+            android:background="@color/grey_bg" />
+
+        <ListView
+            android:id="@+id/listView_countries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_marginEnd="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginStart="10dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/cur_url"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/currentURL"-->
+        <!--android:textColor="@color/red"-->
+        <!--android:textSize="15dp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/currentURL"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toLeftOf="@+id/cur_url"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:text="sdsdsadsadsadsadsadsadadsds"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="15dp" />-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<Button-->
+        <!--android:id="@+id/changeURL"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="@string/changeURL" />-->
+
+
+        <!--<EditText-->
+        <!--android:id="@+id/et_adminURL"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="@color/grey_bg"-->
+        <!--android:gravity="start"-->
+        <!--android:inputType="textMultiLine"-->
+        <!--android:lines="3"-->
+        <!--android:overScrollMode="always"-->
+        <!--android:padding="5dp"-->
+        <!--android:scrollbarStyle="insideInset"-->
+        <!--android:scrollbars="vertical"-->
+        <!--android:singleLine="false"-->
+        <!--android:visibility="gone" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/submitURL"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:text="@string/changeURL"-->
+        <!--android:visibility="gone" />-->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

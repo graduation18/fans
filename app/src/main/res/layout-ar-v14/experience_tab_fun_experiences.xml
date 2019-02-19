@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/funExp_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp">
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tableLayout1"
+            android:layout_below="@+id/horizontalScrollView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tableLayout1"
+                android:layout_below="@+id/horizontalScrollView"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lv_fun_exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp" />
+
+                <Button
+                    android:id="@+id/loadMoreFunExp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey_bg"
+                    android:text="@string/load_more"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/btn_map"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_above="@id/tableLayout1"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginEnd="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:src="@drawable/marker" />-->
+
+
+    <TextView
+        android:id="@+id/tv_no_funExp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="@string/no_exp"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+</RelativeLayout>

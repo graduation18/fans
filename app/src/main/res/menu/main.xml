@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <!--<item-->
+    <!--android:id="@+id/action_settings"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="@string/action_settings"-->
+    <!--app:showAsAction="never" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/action_search"-->
+    <!--android:actionViewClass="android.widget.SearchView"-->
+    <!--android:icon="@drawable/search"-->
+    <!--android:orderInCategory="9"-->
+    <!--android:showAsAction="always"></item>-->
+    <!--&lt;!&ndash;android:icon="@android:drawable/ic_menu_search"&ndash;&gt;-->
+
+    <!--<item-->
+    <!--android:id="@+id/refresh_list"-->
+    <!--android:icon="@drawable/refresh"-->
+    <!--android:orderInCategory="10"-->
+    <!--android:showAsAction="ifRoom"></item>-->
+</menu>

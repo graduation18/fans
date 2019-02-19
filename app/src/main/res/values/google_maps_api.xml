@@ -1,0 +1,41 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=5F:3E:3C:11:6B:56:EA:9B:B2:EC:92:EE:FC:26:E9:43:CC:53:33:B2%3Bsystemonline.com.nearbylocations
+
+    You can also add your credentials to an existing key, using this line:
+    5F:3E:3C:11:6B:56:EA:9B:B2:EC:92:EE:FC:26:E9:43:CC:53:33:B2;systemonline.com.nearbylocations
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        <!--new fans coupon key-->
+        AIzaSyA2ANd12VNvV8FMb2UW7Df1VPn9Rxn0z0M
+
+
+        <!--old fans coupon key-->
+        <!--AIzaSyBGMhcdHvLfN0_-hL4oedHkTwMlEYSdJj0-->
+
+        <!--nearby locations-->
+        <!--AIzaSyCnI_1ZqduIyAJR43dq7X3a0ngQ5SXDnwk-->
+
+        <!--bta3 0sama-->
+        <!--AIzaSyD4LTzZBmDwyMo-7Wrwqp87BN6eQ8BiN9k-->
+
+        <!--bta3 el-app dh-->
+        <!--AIzaSyB3Q_av7LOY_sQx-BNmw_9M7MBXydKsWFo-->
+
+        <!--qr grid key-->
+        <!--AIzaSyBXY5918yZRCtBy0rKVmi_7ah_obGGGkM4-->
+
+        <!--gm3yat android key-->
+        <!--AIzaSyBpqaxrxbkV2QgHUInZ-RodrreSNNGO-Ao-->
+
+    </string>
+</resources>

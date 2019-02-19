@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.systemonline.fanscoupon"
+        minSdkVersion 15
+        targetSdkVersion 26
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        versionCode 14
+        versionName "1.11"
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    sourceSets { main { java.srcDirs = ['src/main/java', 'src/main/java/tabs'] } }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    provided fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:26.1.0'
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+
+    implementation 'com.android.support:multidex:1.0.1'
+
+//    implementation 'com.google.android.gms:play-services:10.0.1'
+    implementation 'com.google.android.gms:play-services:9.0.2'
+//    implementation 'com.google.android.gms:play-services-auth:9.8.0'
+//    implementation 'com.google.android.gms:play-services:8.3.0'
+//    implementation 'com.google.android.gms:play-services:11.4.0'
+//    implementation 'com.google.android.gms:play-services-maps:9.0.0'
+//    'com.google.android.gms:play-services-location:9.0.0'
+
+    implementation 'com.google.maps.android:android-maps-utils:0.3.4'
+
+    implementation 'com.facebook.android:facebook-android-sdk:4.40.0'
+//    implementation 'org.apache.httpcomponents:httpcore:4.4.3'
+//    implementation 'org.apache.httpcomponents:httpclient:4.5'
+
+    implementation 'de.hdodenhof:circleimageview:2.0.0'
+
+    implementation 'com.google.zxing:core:3.2.0'
+
+    implementation 'ch.acra:acra:4.5.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.1.0@aar'
+    implementation 'me.dm7.barcodescanner:zbar:1.8.2'
+
+    implementation 'com.github.paolorotolo:expandableheightlistview:1.0.0'
+
+    implementation 'uk.co.chrisjenx:calligraphy:2.2.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //loading
+    implementation 'com.wang.avi:library:2.1.3'
+
+//    implementation 'com.github.pchmn:MaterialChipsInput:1.0.5'
+    implementation "com.hootsuite.android:nachos:1.1.1"
+
+    implementation 'com.google.firebase:firebase-core:9.0.2'
+//    implementation 'com.google.firebase:firebase-core:11.2.2'
+
+//    implementation 'com.google.firebase:firebase-auth:11.4.0'
+//    implementation 'com.google.firebase:firebase-auth:9.0.0'
+//    implementation 'com.google.firebase:firebase-auth:10.0.0'
+
+    implementation 'com.twitter.sdk.android:twitter:3.1.1'
+//
+//    implementation 'com.twitter.sdk.android:twitter:1.10.0'
+
+    implementation 'com.weiwangcn.betterspinner:library:1.1.0'
+
+// step view library for intrduce the app to the user
+    implementation 'com.shuhart.stepview:stepview:1.4.0'
+//showcase to identify every button job to the user
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'

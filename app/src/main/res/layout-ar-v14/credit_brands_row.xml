@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/brandImgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp">
+
+        <ImageView
+            android:id="@+id/brandImg"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/brandImgCircle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="235dp"
+            android:src="@drawable/com_facebook_profile_picture_blank_square"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/brand_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brandImgCircle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal"></LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/brandStars"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_below="@id/brandImgCircle"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:src="@drawable/arrow_right" />-->
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fanCustomerType"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/badge_fan" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey_bg" />
+
+    <!--<HorizontalScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/leftArrow"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:src="@drawable/left_arrow" />-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:padding="5dp">-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="5dp">-->
+
+        <!--<TextView-->
+        <!---->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/my_total_points"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_totalPoints"-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@drawable/rounded_tv_red"-->
+        <!--android:gravity="center"-->
+        <!--android:text="55"-->
+        <!--android:textColor="@color/white" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="5dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/total_exchanged_points"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_exchangedPoints"-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@drawable/rounded_tv_red"-->
+        <!--android:gravity="center"-->
+        <!--android:text="55"-->
+        <!--android:textColor="@color/white" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="5dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/no_used_coupons"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_usedCoupons"-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@drawable/rounded_tv_red"-->
+        <!--android:gravity="center"-->
+        <!--android:text="55"-->
+        <!--android:textColor="@color/white" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="5dp">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/available_coupons"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_availableCoupons"-->
+        <!--android:layout_width="35dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@drawable/rounded_tv_red"-->
+        <!--android:gravity="center"-->
+        <!--android:text="55"-->
+        <!--android:textColor="@color/white" />-->
+        <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/lin_totalPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <!--android:layout_toRightOf="@+id/leftArrow"-->
+
+
+            <LinearLayout
+                android:id="@+id/lin_names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="@string/my_total_points"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="@string/total_exchanged_points"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="@string/no_used_coupons"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="@string/available_coupons"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_values"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_names"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_totalPoints"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/rounded_tv_red"
+                    android:gravity="center"
+                    android:text="55"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_exchangedPoints"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/rounded_tv_red"
+                    android:gravity="center"
+                    android:text="55"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_usedCoupons"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/rounded_tv_red"
+                    android:gravity="center"
+                    android:text="55"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_availableCoupons"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_tv_red"
+                    android:gravity="center"
+                    android:text="55"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        /////////////////////////////////////////////////////////
+        <!--<ImageView-->
+        <!--android:id="@+id/rightArrow"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toEndOf="@id/lin_totalPoints"-->
+        <!--android:layout_toRightOf="@id/lin_totalPoints"-->
+        <!--android:src="@drawable/right_arrow" />-->
+    </RelativeLayout>
+
+
+    <!--</HorizontalScrollView>-->
+
+    <!--<HorizontalScrollView-->
+    <!--android:id="@+id/brandBadgesScroll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:gravity="center_horizontal">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="@color/white">-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/lin_names"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginEnd="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/my_total_points"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginEnd="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/total_exchanged_points"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginEnd="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/no_used_coupons"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="12sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/available_coupons"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="12sp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/lin_values"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/lin_names"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_totalPoints"-->
+    <!--android:layout_width="45dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginEnd="50dp"-->
+    <!--android:layout_marginRight="50dp"-->
+    <!--android:background="@drawable/rounded_tv_red"-->
+    <!--android:gravity="center"-->
+    <!--android:text="55"-->
+    <!--android:textColor="@color/black" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_exchangedPoints"-->
+    <!--android:layout_width="45dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginEnd="50dp"-->
+    <!--android:layout_marginRight="50dp"-->
+    <!--android:background="@drawable/rounded_tv_red"-->
+    <!--android:gravity="center"-->
+    <!--android:text="55"-->
+    <!--android:textColor="@color/black" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_usedCoupons"-->
+    <!--android:layout_width="45dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginEnd="50dp"-->
+    <!--android:layout_marginRight="50dp"-->
+    <!--android:background="@drawable/rounded_tv_red"-->
+    <!--android:gravity="center"-->
+    <!--android:text="55"-->
+    <!--android:textColor="@color/black" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_availableCoupons"-->
+    <!--android:layout_width="45dp"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="@drawable/rounded_tv_red"-->
+    <!--android:gravity="center"-->
+    <!--android:text="55"-->
+    <!--android:textColor="@color/black" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/lin_points"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginBottom="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="15dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginRight="15dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginBottom="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/my_total_points"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="16sp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@drawable/rounded_tv_red"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="55"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/lin_coupons"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginBottom="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="15dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginRight="15dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_toEndOf="@id/lin_points"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_toRightOf="@id/lin_points"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginBottom="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/number_of_coupons"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="16sp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@drawable/rounded_tv_red"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="55"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginBottom="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="15dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginRight="15dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_toEndOf="@id/lin_coupons"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_toRightOf="@id/lin_coupons"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginBottom="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/available_coupons"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="16sp" />&ndash;&gt;-->
+    <!--&lt;!&ndash;&ndash;&gt;-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@drawable/rounded_tv_red"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="55"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+    <!--</LinearLayout>-->
+    <!--</HorizontalScrollView>-->
+
+
+</LinearLayout>

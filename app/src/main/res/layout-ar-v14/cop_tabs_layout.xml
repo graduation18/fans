@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_blue_grey_800"
+        android:textAlignment="center"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/orange"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/orange"
+        app:tabTextColor="@color/white">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+    <!--<com.systemonline.fanscoupon.coupon_tabs.WrapContentViewPager--><!--android:id="@+id/viewpager"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!-->-->
+
+
+    <!--</com.systemonline.fanscoupon.coupon_tabs.WrapContentViewPager>-->
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-4dp"
+        android:background="@color/dim_foreground_disabled_material_light"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/orange"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/orange"
+        app:tabTextColor="@color/white">
+
+    </android.support.design.widget.TabLayout>
+
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<TabHost xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+    <!--<android.support.design.widget.TabLayout--><!--android:id="@+id/tabs2"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@color/material_blue_grey_800"--><!--app:tabGravity="fill"--><!--app:tabIndicatorColor="@color/orange"--><!--app:tabMode="fixed"--><!--app:tabSelectedTextColor="@color/orange"--><!--app:tabTextColor="@color/white">-->
+
+    <!--</android.support.design.widget.TabLayout>-->
+
+    <!--&lt;!&ndash;<android.support.v4.view.ViewPager&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/viewpager"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</android.support.v4.view.ViewPager>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<android.support.design.widget.TabLayout&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/tabs1"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:background="@color/dim_foreground_disabled_material_light"&ndash;&gt;--><!--&lt;!&ndash;app:tabGravity="fill"&ndash;&gt;--><!--&lt;!&ndash;app:tabIndicatorColor="@color/orange"&ndash;&gt;--><!--&lt;!&ndash;app:tabMode="fixed"&ndash;&gt;--><!--&lt;!&ndash;app:tabSelectedTextColor="@color/orange"&ndash;&gt;--><!--&lt;!&ndash;app:tabTextColor="@color/white"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</android.support.design.widget.TabLayout>&ndash;&gt;-->
+
+    <!--<FrameLayout--><!--android:id="@android:id/tabcontent"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_weight="1"--><!--android:padding="5dp" >-->
+
+    <!--</FrameLayout>-->
+
+    <!--<TabWidget--><!--android:id="@android:id/tabs"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="-4dp"--><!--android:layout_weight="0" />-->
+
+    <!--</LinearLayout>--><!--</TabHost>-->
+
+
